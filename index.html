@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet">
+      rel="stylesheet"
+    /><script defer src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <link href="style.css" rel="stylesheet" />
+    <link href="media.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -21,7 +23,6 @@
         <li><a href="#gallery" class="navs">NFT gallery</a></li>
         <li><a href="#cta" class="navs last-nav">Free NFT avatar</a></li>
       </ul></nav>
-        <ion-icon class="menu" name="menu-outline"></ion-icon><ion-icon class="close" name="close-outline"></ion-icon>
       </button>
     </header>
 
@@ -40,8 +41,8 @@
               </p>
             </div>
             <div class="hero-buttons">
-              <a href="#cta" class="boton2 boto1">Start NFT journey</a>
-              <a href="#how" class="boton2 boto2">Learn more &darr;</a>
+              <a href="#cta" class="button2 but1">Start NFT journey</a>
+              <a href="#how" class="button2 but2">Learn more &darr;</a>
             </div>
           </div>
 
@@ -62,13 +63,12 @@
         <p class="feat-logos">Fibart has been featured by these companies</p>
         <div class="logo-cont">
           <img
-            src="partners/business-insider.png"
-            alt="business-insider"/>
-
-
-          <img src="partners/the-new-york-times.png" alt="new york times" />
-          <img src="partners/forbes.png" alt="forbes" />
-          <img src="partners/usa-today.png" alt="usa today" />
+            src="logos\business-insider.png"
+            alt="business insider logo"
+          /><img src="logos\techcrunch.png" alt="techcrunch logo" />
+          <img src="logos\the-new-york-times.png" alt="new york times logo" />
+          <img src="logos\forbes.png" alt="forbes logo" />
+          <img src="logos\usa-today.png" alt="usa today logo" />
         </div>
       </section>
       <section class="section-hiw" id="how">
@@ -90,12 +90,12 @@
           </div>
           <div class="hiw-img">
             <img src="steps/step-1.webp" class="img1" alt="nft avatars" />
-            <div class="nft"></div>
+            <div class="square1"></div>
           </div>
 
           <div class="hiw-img num2">
-            <img src="steps/step-2.jpg" class="img 2" alt="nft shop" />
-            <div class="nft2"></div>
+            <img src="steps/step-2.jpg" class="img2" alt="nft shop" />
+            <div class="square2"></div>
           </div>
 
           <div class="hiw-text">
@@ -118,13 +118,13 @@
             </p>
           </div>
           <div class="hiw-img">
-            <img src="steps/step-3.png" class="img 3" alt="nft photo" />
-            <div class="nft2"></div>
+            <img src="steps/step-3.png" class="img2" alt="nft photo" />
+            <div class="square2"></div>
           </div>
 
-          <div class="hiw-img 4">
-            <img src="steps/step-4.png" class="img 4" alt="screenft" />
-            <div class="nft"></div>
+          <div class="hiw-img num4">
+            <img src="steps/step-4.png" class="img3" alt="screenft" />
+            <div class="square"></div>
           </div>
 
           <div class="hiw-text">
@@ -220,5 +220,120 @@
             </div>
           </div>
         </div>
-     </body>
-  </html>
+        <div class="market">
+          <a href="#" class="marketplace">See marketplace &rarr;</a>
+        </div>
+      </section>
+      <section class="nft-gallery" id="gallery">
+        <div class="cont2 gallery-grid">
+          <div class="testimonials">
+            <div class="cont header-hiw margbo">
+              <span class="hiw">nft gallery</span>
+              <h2 class="hiw-h2">CEO quote and gallery</h2>
+            </div>
+            <div class="ceo">
+              <blockquote>
+                <cite
+                  ><span>"</span>NFT's has revolutionized the art world and very
+                  suddenly brought us to a new dimension of the future, so we
+                  should not forget the features that art once possessed, in
+                  this case the gallery of works that went online in the case of
+                  NFTs, we will do our best to preserve the culture of the
+                  gallery and never forget how good it is to share opinions
+                  about this or that work face to face and expand human
+                  consciousness.<span>"</span></cite
+                >
+              </blockquote>
+            </blockquote>
+            <div class="salome">
+            </div>
+          </div>
+        </div>
+        <div class="photos">
+          <div>
+            <img src="gallery/art-1.jpg" class="art-img" alt="gallery pictures" />
+          </div>
+          <div>
+            <img src="gallery/art-2.jpg" class="art-img" alt="gallery pictures" />
+          </div>
+          <div>
+            <img src="gallery/art-3.jpg" class="art-img" alt="gallery pictures" />
+          </div>
+          <div>
+            <img src="gallery/art-4.jpg" class="art-img" alt="gallery pictures" />
+          </div>
+          <div>
+            <img src="gallery/art-5.jpg" class="art-img" alt="gallery pictures" />
+          </div>
+          <div>
+            <img src="gallery/art-6.png" class="art-img" alt="gallery pictures" />
+          </div>
+          <div>
+            <img src="gallery/art-7.jpeg" class="art-img" alt="gallery pictures" />
+          </div>
+          <div>
+            <img src="gallery/art-8.jpg" class="art-img" alt="gallery pictures" />
+          </div>
+          <div>
+            <img src="gallery/art-9.jpg" class="art-img delete" alt="gallery pictures" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="cta" class="cta padtop">
+      <div class="cta-cont">
+        <div class="cta-box box-img">
+          <div class="cta-img" role="img" aria-label="futuristic image"></div>
+          <div class="cta-txt">
+            <div class="header-hiw margbo">
+              <h2 class="hiw-h2">Get free NFT avatar and more!</h2>
+            </div>
+            <p class="cta-p">
+              Fill the form to activate your email address for your avatar,
+              get notifications for our upcoming NFT art exhibitions and other
+              activities.
+            </p>
+            <form class='form' method='post' name='sign-up'><input type='hidden' name='form-name' value='sign-up' />
+              <div>
+                <label for="name">Full name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="full name"
+                  placeholder="Fibart NFT"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="emailt"
+                  id="email"
+                  name="email"
+                  placeholder="Fibart-NFT@gmail.com"
+                  required
+                />
+              </div>
+              <div>
+                <label for="option">Interest area</label>
+                <select id="option" name="option" required>
+                  <option value="">Choose one option</option>
+                  <option value="art">NFT art</option>
+                  <option value="screenft">screeNFT</option>
+                  <option value="activities">activities</option>
+                  <option value="crypto">crypto</option>
+                  <option value="other">other</option>
+                </select>
+              </div>
+              <button class="button but-top">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    </ul>
+    </div>
+  </div>
+  </main>
+</body>
+</html>
