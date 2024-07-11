@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Fibart is an art gallery, which focuses on NFTs.">
+    <title>Fibart-NFT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+    <link rel="manifest" href="manifest.webmanifest"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    /><script defer src="// https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <link href="style.css" rel="stylesheet" />
-    <link href="media.css" rel="stylesheet" />
+      rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+    <link href="features.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -23,6 +25,8 @@
         <li><a href="#gallery" class="navs">NFT gallery</a></li>
         <li><a href="#cta" class="navs last-nav">Free NFT avatar</a></li>
       </ul></nav>
+      <button class="js-btn button-js">
+        <ion-icon name="grid-outline"></ion-icon>
       </button>
     </header>
 
@@ -63,8 +67,7 @@
         <p class="feat-logos">Fibart has been featured by these companies</p>
         <div class="logo-cont">
           <img
-            src="logos\business-insider.png"
-            alt="business insider logo"
+            src="logos\business-insider.png"alt="business insider logo"
           /><img src="logos\techcrunch.png" alt="techcrunch logo" />
           <img src="logos\the-new-york-times.png" alt="new york times logo" />
           <img src="logos\forbes.png" alt="forbes logo" />
@@ -244,96 +247,148 @@
                   consciousness.<span>"</span></cite
                 >
               </blockquote>
-            </blockquote>
-            <div class="salome">
+              <div class="salome">
+                <span>-Salome Merabishvili</span>
+              </div>
+            </div>
+          </div>
+          <div class="photos">
+            <div>
+              <img src="gallery/art-1.jpg" class="art-img" alt="gallery pictures" />
+            </div>
+            <div>
+              <img src="gallery/art-2.jpg" class="art-img" alt="gallery pictures" />
+            </div>
+            <div>
+              <img src="gallery/art-3.jpg" class="art-img" alt="gallery pictures" />
+            </div>
+            <div>
+              <img src="gallery/art-4.jpg" class="art-img" alt="gallery pictures" />
+            </div>
+            <div>
+              <img src="gallery/art-5.jpg" class="art-img" alt="gallery pictures" />
+            </div>
+            <div>
+              <img src="gallery/art-6.png" class="art-img" alt="gallery pictures" />
+            </div>
+            <div>
+              <img src="gallery/art-7.jpeg" class="art-img" alt="gallery pictures" />
+            </div>
+            <div>
+              <img src="gallery/art-8.jpg" class="art-img" alt="gallery pictures" />
+            </div>
+            <div>
+              <img src="gallery/art-9.jpg" class="art-img delete" alt="gallery pictures" />
             </div>
           </div>
         </div>
-        <div class="photos">
-          <div>
-            <img src="gallery/art-1.jpg" class="art-img" alt="gallery pictures" />
-          </div>
-          <div>
-            <img src="gallery/art-2.jpg" class="art-img" alt="gallery pictures" />
-          </div>
-          <div>
-            <img src="gallery/art-3.jpg" class="art-img" alt="gallery pictures" />
-          </div>
-          <div>
-            <img src="gallery/art-4.jpg" class="art-img" alt="gallery pictures" />
-          </div>
-          <div>
-            <img src="gallery/art-5.jpg" class="art-img" alt="gallery pictures" />
-          </div>
-          <div>
-            <img src="gallery/art-6.png" class="art-img" alt="gallery pictures" />
-          </div>
-          <div>
-            <img src="gallery/art-7.jpeg" class="art-img" alt="gallery pictures" />
-          </div>
-          <div>
-            <img src="gallery/art-8.jpg" class="art-img" alt="gallery pictures" />
-          </div>
-          <div>
-            <img src="gallery/art-9.jpg" class="art-img delete" alt="gallery pictures" />
+      </section>
+      <section id="cta" class="cta padtop">
+        <div class="cta-cont">
+          <div class="cta-box box-img">
+            <div class="cta-img" role="img" aria-label="futuristic image"></div>
+            <div class="cta-txt">
+              <div class="header-hiw margbo">
+                <h2 class="hiw-h2">Get free NFT avatar and more!</h2>
+              </div>
+              <p class="cta-p">
+                Fill the form to activate your email address for your avatar,
+                get notifications for our upcoming NFT art exhibitions and other
+                activities.
+              </p>
+              <form class='form' method='post' name='sign-up'><input type='hidden' name='form-name' value='sign-up' />
+                <div>
+                  <label for="name">Full name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="full name"
+                    placeholder="Fibart NFT"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email</label>
+                  <input
+                    type="emailt"
+                    id="email"
+                    name="email"
+                    placeholder="Fibart-NFT.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="option">Interest area</label>
+                  <select id="option" name="option" required>
+                    <option value="">Choose one option</option>
+                    <option value="art">NFT art</option>
+                    <option value="screenft">screeNFT</option>
+                    <option value="activities">activities</option>
+                    <option value="crypto">crypto</option>
+                    <option value="other">other</option>
+                  </select>
+                </div>
+                <button class="button but-top">Submit</button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="cta" class="cta padtop">
-      <div class="cta-cont">
-        <div class="cta-box box-img">
-          <div class="cta-img" role="img" aria-label="futuristic image"></div>
-          <div class="cta-txt">
-            <div class="header-hiw margbo">
-              <h2 class="hiw-h2">Get free NFT avatar and more!</h2>
-            </div>
-            <p class="cta-p">
-              Fill the form to activate your email address for your avatar,
-              get notifications for our upcoming NFT art exhibitions and other
-              activities.
+      </section>
+
+      <footer class="footer">
+        <div class="footer-box">
+          <div class="footer-col flex-just">
+            <span><a href="#"
+              ><img
+                src="logo.png"
+                alt="footer logo"
+                class="footer-logo"
+            /></a></span>
+            <ul class="logos2">
+            </ul>
+            <p class="down">
+               <span class="currentYear">2024</span> All Right Reserved By Saba Amiranashvili.
             </p>
-            <form class='form' method='post' name='sign-up'><input type='hidden' name='form-name' value='sign-up' />
-              <div>
-                <label for="name">Full name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="full name"
-                  placeholder="Fibart NFT"
-                  required
-                />
-              </div>
-              <div>
-                <label for="email">Email</label>
-                <input
-                  type="emailt"
-                  id="email"
-                  name="email"
-                  placeholder="Fibart-NFT@gmail.com"
-                  required
-                />
-              </div>
-              <div>
-                <label for="option">Interest area</label>
-                <select id="option" name="option" required>
-                  <option value="">Choose one option</option>
-                  <option value="art">NFT art</option>
-                  <option value="screenft">screeNFT</option>
-                  <option value="activities">activities</option>
-                  <option value="crypto">crypto</option>
-                  <option value="other">other</option>
-                </select>
-              </div>
-              <button class="button but-top">Submit</button>
-            </form>
+          </div>
+          <div class="footer-col contact">
+            <p class="main-p">Contact us</p>
+
+            <div class="footer-flex">
+              <p>Address: Georgia, Gori.</p>
+              <ul class="contact-flex">
+                <li><a>+995-568-***-***</a></li>
+                <li><a>Fibart-Nft.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-col inline-block block2">
+            <p class="main-p comp">Company</p>
+            <ul class="footer-flex">
+              <li><a href="#">About Fibart</a></li>
+              <li><a href="#">Bussiness</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Careers</></a></li>
+            </ul>
+          </div>
+          <div class="footer-col inline-block">
+            <p class="main-p">Resources</p>
+            <ul class="footer-flex">
+              <li><a href="#">Help center</a></li>
+              <li><a href="#">White paper</a></li>
+              <li><a href="#">Privacy and terms</a></li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-    </ul>
-    </div>
-  </div>
-  </main>
-</body>
+      </footer>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="fib.js"></script>
+  </body>
 </html>
